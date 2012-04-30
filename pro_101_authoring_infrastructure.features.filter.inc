@@ -10,10 +10,10 @@
 function pro_101_authoring_infrastructure_filter_default_formats() {
   $formats = array();
 
-  // Exported format: Default
+  // Exported format: Regular
   $formats['plain_text'] = array(
     'format' => 'plain_text',
-    'name' => 'Default',
+    'name' => 'Regular',
     'cache' => '1',
     'status' => '1',
     'weight' => '10',
