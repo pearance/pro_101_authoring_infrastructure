@@ -13,10 +13,7 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   // Exported permission: administer filters
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'filter',
+    'roles' => array(),
   );
 
   return $permissions;
