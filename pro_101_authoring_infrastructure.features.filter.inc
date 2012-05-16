@@ -14,7 +14,7 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
   $formats['plain_text'] = array(
     'format' => 'plain_text',
     'name' => 'Regular',
-    'cache' => '0',
+    'cache' => '1',
     'status' => '1',
     'weight' => '10',
     'filters' => array(
