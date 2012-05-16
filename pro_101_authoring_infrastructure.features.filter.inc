@@ -14,22 +14,22 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
   $formats['plain_text'] = array(
     'format' => 'plain_text',
     'name' => 'Regular',
-    'cache' => '1',
+    'cache' => '0',
     'status' => '1',
     'weight' => '10',
     'filters' => array(
       'filter_autop' => array(
-        'weight' => '0',
+        'weight' => '-50',
         'status' => '1',
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(
-        'weight' => '2',
+        'weight' => '-48',
         'status' => '1',
         'settings' => array(),
       ),
       'pathologic' => array(
-        'weight' => '4',
+        'weight' => '-47',
         'status' => '1',
         'settings' => array(
           'local_paths' => '/',
