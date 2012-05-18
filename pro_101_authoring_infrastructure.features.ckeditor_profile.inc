@@ -29,11 +29,11 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
         'default' => 't',
         'show_toggle' => 'f',
         'skin' => 'kama',
-        'uicolor' => 'custom',
+        'uicolor' => 'default',
         'uicolor_textarea' => '<p>
 	Click the <strong>UI Color Picker</strong> button to set your color preferences.</p>
 ',
-        'uicolor_user' => '#DBDBDB',
+        'uicolor_user' => 'default',
         'toolbar' => '[
     [\'Styles\',\'Media\',\'BulletedList\',\'NumberedList\',\'Table\',\'Link\',\'Unlink\'],
     [\'Cut\',\'Copy\',\'Paste\',\'Replace\'],
@@ -73,9 +73,10 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
         'html_entities' => 't',
         'scayt_autoStartup' => 't',
         'theme_config_js' => 'f',
-        'js_conf' => '// Sizes are in pixels
-config.resize_minWidth = 550;
-config.resize_maxWidth = 860;
+        'js_conf' => 'config.resize_enabled = false;
+// Sizes are in pixels
+// config.resize_minWidth = 550;
+// config.resize_maxWidth = 860;
 // config.resize_minHeight = 200;
 // config.resize_maxHeight = 500;',
         'loadPlugins' => array(
