@@ -29,11 +29,11 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
         'default' => 't',
         'show_toggle' => 'f',
         'skin' => 'kama',
-        'uicolor' => 'default',
+        'uicolor' => 'custom',
         'uicolor_textarea' => '<p>
 	Click the <strong>UI Color Picker</strong> button to set your color preferences.</p>
 ',
-        'uicolor_user' => 'default',
+        'uicolor_user' => '#EEEEEE',
         'toolbar' => '[
     [\'Styles\',\'Media\',\'BulletedList\',\'NumberedList\',\'Table\',\'Link\',\'Unlink\'],
     [\'Cut\',\'Copy\',\'Paste\',\'Replace\'],
