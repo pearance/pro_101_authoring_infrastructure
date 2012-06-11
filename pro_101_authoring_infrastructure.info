@@ -8,6 +8,7 @@ project = pro_101_authoring_infrastructure
 dependencies[] = ckeditor
 dependencies[] = ctools
 dependencies[] = features
+dependencies[] = invisimail
 dependencies[] = pathologic
 dependencies[] = strongarm
 features[ckeditor_profile][] = CKEditor Global Profile
