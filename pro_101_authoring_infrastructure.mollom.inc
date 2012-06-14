@@ -17,6 +17,7 @@ function pro_101_authoring_infrastructure_default_mollom_form() {
   $mollom_form->mode = TRUE;
   $mollom_form->checks = array(
     0 => 'spam',
+    1 => 'profanity',
   );
   $mollom_form->discard = FALSE;
   $mollom_form->moderation = TRUE;
