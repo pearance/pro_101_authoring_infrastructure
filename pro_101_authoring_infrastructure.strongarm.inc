@@ -22,46 +22,23 @@ function pro_101_authoring_infrastructure_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'facebook_comments_applyall';
+  $strongarm->value = 0;
+  $export['facebook_comments_applyall'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'facebook_comments_block_amount';
+  $strongarm->value = '10';
+  $export['facebook_comments_block_amount'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'facebook_comments_block_width';
   $strongarm->value = '208';
   $export['facebook_comments_block_width'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'facebook_comments_box_admin_id';
-  $strongarm->value = '475784589102582';
-  $export['facebook_comments_box_admin_id'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'facebook_comments_box_default_comments';
-  $strongarm->value = '10';
-  $export['facebook_comments_box_default_comments'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'facebook_comments_box_default_node_types';
-  $strongarm->value = array(
-    'blog' => 'blog',
-  );
-  $export['facebook_comments_box_default_node_types'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'facebook_comments_box_default_theme';
-  $strongarm->value = 'light';
-  $export['facebook_comments_box_default_theme'] = $strongarm;
-
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'facebook_comments_box_default_width';
-  $strongarm->value = '400';
-  $export['facebook_comments_box_default_width'] = $strongarm;
 
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
