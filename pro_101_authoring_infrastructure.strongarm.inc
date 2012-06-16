@@ -45,8 +45,8 @@ function pro_101_authoring_infrastructure_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'mollom_status';
   $strongarm->value = array(
-    'keys' => TRUE,
-    'keys valid' => TRUE,
+    'keys' => FALSE,
+    'keys valid' => FALSE,
   );
   $export['mollom_status'] = $strongarm;
 
