@@ -31,6 +31,15 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'ckeditor',
   );
 
+  // Exported permission: administer facebook comments.
+  $permissions['administer facebook comments'] = array(
+    'name' => 'administer facebook comments',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'facebook_comments',
+  );
+
   // Exported permission: administer filters.
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
@@ -67,6 +76,15 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'ckeditor',
+  );
+
+  // Exported permission: moderate facebook comments.
+  $permissions['moderate facebook comments'] = array(
+    'name' => 'moderate facebook comments',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'facebook_comments',
   );
 
   return $permissions;
