@@ -104,15 +104,5 @@ function pro_101_authoring_infrastructure_strongarm() {
   $strongarm->value = 1;
   $export['mollom_privacy_link'] = $strongarm;
 
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'mollom_status';
-  $strongarm->value = array(
-    'keys' => FALSE,
-    'keys valid' => FALSE,
-  );
-  $export['mollom_status'] = $strongarm;
-
   return $export;
 }

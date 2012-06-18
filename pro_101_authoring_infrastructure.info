@@ -41,4 +41,3 @@ features[variable][] = facebook_comments_width_fluid
 features[variable][] = mollom_fallback
 features[variable][] = mollom_moderation_redirect
 features[variable][] = mollom_privacy_link
-features[variable][] = mollom_status
