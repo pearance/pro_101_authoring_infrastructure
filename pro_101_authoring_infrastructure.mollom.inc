@@ -10,7 +10,7 @@
 function pro_101_authoring_infrastructure_default_mollom_form() {
   $export = array();
 
-  $mollom_form = new stdClass;
+  $mollom_form = new stdClass();
   $mollom_form->disabled = FALSE; /* Edit this to true to make a default mollom_form disabled initially */
   $mollom_form->api_version = 1;
   $mollom_form->form_id = 'testimonial_node_form';
@@ -31,7 +31,7 @@ function pro_101_authoring_infrastructure_default_mollom_form() {
   $mollom_form->module = 'node';
   $export['testimonial_node_form'] = $mollom_form;
 
-  $mollom_form = new stdClass;
+  $mollom_form = new stdClass();
   $mollom_form->disabled = FALSE; /* Edit this to true to make a default mollom_form disabled initially */
   $mollom_form->api_version = 1;
   $mollom_form->form_id = 'webform_node_form';
