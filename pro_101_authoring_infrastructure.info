@@ -10,6 +10,7 @@ dependencies[] = ctools
 dependencies[] = facebook_comments
 dependencies[] = features
 dependencies[] = invisimail
+dependencies[] = lexicon
 dependencies[] = mollom
 dependencies[] = pathologic
 dependencies[] = sharethis

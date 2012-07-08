@@ -14,7 +14,7 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
   $formats['plain_text'] = array(
     'format' => 'plain_text',
     'name' => 'Regular',
-    'cache' => '1',
+    'cache' => '0',
     'status' => '1',
     'weight' => '10',
     'filters' => array(
@@ -24,25 +24,30 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(
-        'weight' => '-48',
+        'weight' => '-49',
         'status' => '1',
         'settings' => array(),
       ),
-      'pathologic' => array(
-        'weight' => '-47',
-        'status' => '1',
-        'settings' => array(
-          'local_paths' => '/',
-          'absolute' => 1,
-        ),
-      ),
       'invisimail_encode_html_entities' => array(
-        'weight' => '0',
+        'weight' => '-44',
         'status' => '1',
         'settings' => array(
           'encoder' => 'html_entities',
           'chunk' => 1,
           'link' => 1,
+        ),
+      ),
+      'filter_lexicon' => array(
+        'weight' => '-41',
+        'status' => '1',
+        'settings' => array(),
+      ),
+      'pathologic' => array(
+        'weight' => '-40',
+        'status' => '1',
+        'settings' => array(
+          'local_paths' => '/',
+          'absolute' => 1,
         ),
       ),
     ),
