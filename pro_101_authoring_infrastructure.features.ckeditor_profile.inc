@@ -35,7 +35,7 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
 ',
         'uicolor_user' => '#EEEEEE',
         'toolbar' => '[
-    [\'Styles\',\'Media\',\'BulletedList\',\'NumberedList\',\'Table\',\'Link\',\'Unlink\'],
+    [\'Styles\',\'Templates\',\'Media\',\'BulletedList\',\'NumberedList\',\'Table\',\'Link\',\'Unlink\'],
     [\'Cut\',\'Copy\',\'Paste\',\'Replace\'],
     [\'Source\']
 ]',
