@@ -87,6 +87,15 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'workbench',
   );
 
+  // Exported permission: administer workbench moderation.
+  $permissions['administer workbench moderation'] = array(
+    'name' => 'administer workbench moderation',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
   // Exported permission: bypass mollom protection.
   $permissions['bypass mollom protection'] = array(
     'name' => 'bypass mollom protection',
@@ -99,6 +108,15 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'mollom',
   );
 
+  // Exported permission: bypass workbench moderation.
+  $permissions['bypass workbench moderation'] = array(
+    'name' => 'bypass workbench moderation',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
   // Exported permission: customize ckeditor.
   $permissions['customize ckeditor'] = array(
     'name' => 'customize ckeditor',
@@ -108,6 +126,33 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'ckeditor',
   );
 
+  // Exported permission: moderate content from draft to needs_review.
+  $permissions['moderate content from draft to needs_review'] = array(
+    'name' => 'moderate content from draft to needs_review',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate content from needs_review to draft.
+  $permissions['moderate content from needs_review to draft'] = array(
+    'name' => 'moderate content from needs_review to draft',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate content from needs_review to published.
+  $permissions['moderate content from needs_review to published'] = array(
+    'name' => 'moderate content from needs_review to published',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
   // Exported permission: moderate facebook comments.
   $permissions['moderate facebook comments'] = array(
     'name' => 'moderate facebook comments',
@@ -115,6 +160,51 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'facebook_comments',
+  );
+
+  // Exported permission: use workbench_moderation my drafts tab.
+  $permissions['use workbench_moderation my drafts tab'] = array(
+    'name' => 'use workbench_moderation my drafts tab',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: use workbench_moderation needs review tab.
+  $permissions['use workbench_moderation needs review tab'] = array(
+    'name' => 'use workbench_moderation needs review tab',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: view all unpublished content.
+  $permissions['view all unpublished content'] = array(
+    'name' => 'view all unpublished content',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: view moderation history.
+  $permissions['view moderation history'] = array(
+    'name' => 'view moderation history',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: view moderation messages.
+  $permissions['view moderation messages'] = array(
+    'name' => 'view moderation messages',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'workbench_moderation',
   );
 
   return $permissions;
