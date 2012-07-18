@@ -22,6 +22,18 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'mollom',
   );
 
+  // Exported permission: access workbench.
+  $permissions['access workbench'] = array(
+    'name' => 'access workbench',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'workbench',
+  );
+
   // Exported permission: administer ckeditor.
   $permissions['administer ckeditor'] = array(
     'name' => 'administer ckeditor',
@@ -64,6 +76,15 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'sharethis',
+  );
+
+  // Exported permission: administer workbench.
+  $permissions['administer workbench'] = array(
+    'name' => 'administer workbench',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'workbench',
   );
 
   // Exported permission: bypass mollom protection.
