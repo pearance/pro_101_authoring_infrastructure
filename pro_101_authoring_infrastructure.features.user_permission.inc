@@ -113,6 +113,7 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'name' => 'bypass workbench moderation',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
@@ -130,7 +131,10 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   $permissions['moderate content from draft to needs_review'] = array(
     'name' => 'moderate content from draft to needs_review',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
@@ -140,6 +144,7 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'name' => 'moderate content from needs_review to draft',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
@@ -149,6 +154,7 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'name' => 'moderate content from needs_review to published',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
@@ -166,7 +172,10 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   $permissions['use workbench_moderation my drafts tab'] = array(
     'name' => 'use workbench_moderation my drafts tab',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
@@ -175,7 +184,10 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   $permissions['use workbench_moderation needs review tab'] = array(
     'name' => 'use workbench_moderation needs review tab',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
@@ -184,7 +196,10 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   $permissions['view all unpublished content'] = array(
     'name' => 'view all unpublished content',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
@@ -193,7 +208,10 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   $permissions['view moderation history'] = array(
     'name' => 'view moderation history',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
@@ -202,7 +220,10 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   $permissions['view moderation messages'] = array(
     'name' => 'view moderation messages',
     'roles' => array(
-      0 => 'developer',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
