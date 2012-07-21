@@ -16,6 +16,7 @@ function pro_101_authoring_infrastructure_default_rules_configuration() {
       "ON" : [ "node_insert" ],
       "IF" : [
         { "contents_current_state" : { "node" : [ "node" ], "moderation_state" : "needs_review" } },
+        { "AND" : [] },
         { "user_has_role" : {
             "account" : [ "site:current-user" ],
             "roles" : { "value" : { "8998634" : "8998634", "96220023" : "96220023" } },
