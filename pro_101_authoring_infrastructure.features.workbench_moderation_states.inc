@@ -18,7 +18,7 @@ function pro_101_authoring_infrastructure_workbench_moderation_export_states() {
     'needs_review' => array(
       'name' => 'needs_review',
       'label' => 'Ready for Optimization',
-      'description' => 'Ready for review',
+      'description' => 'Ready for optimization',
       'weight' => '-9',
     ),
     'published' => array(
