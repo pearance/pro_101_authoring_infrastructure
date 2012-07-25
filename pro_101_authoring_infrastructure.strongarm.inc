@@ -52,6 +52,20 @@ function pro_101_authoring_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_lock_timeout_minutes';
+  $strongarm->value = '120';
+  $export['content_lock_timeout_minutes'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_lock_timeout_on_edit';
+  $strongarm->value = 0;
+  $export['content_lock_timeout_on_edit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'content_lock_unload_js';
   $strongarm->value = 0;
   $export['content_lock_unload_js'] = $strongarm;
