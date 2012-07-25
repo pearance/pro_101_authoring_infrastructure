@@ -13,6 +13,66 @@ function pro_101_authoring_infrastructure_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_lock_admin_cancelbutton';
+  $strongarm->value = 0;
+  $export['content_lock_admin_cancelbutton'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_lock_admin_verbose';
+  $strongarm->value = 1;
+  $export['content_lock_admin_verbose'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_lock_allowed_formats';
+  $strongarm->value = array(
+    'plain_text' => 0,
+  );
+  $export['content_lock_allowed_formats'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_lock_allowed_node_types';
+  $strongarm->value = array(
+    'faq' => 'faq',
+    'blog' => 'blog',
+    'block' => 0,
+    'webform' => 0,
+    'page' => 0,
+    'featured' => 0,
+    'specialty' => 0,
+    'testimonial' => 0,
+  );
+  $export['content_lock_allowed_node_types'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_lock_unload_js';
+  $strongarm->value = 0;
+  $export['content_lock_unload_js'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_lock_unload_js_message';
+  $strongarm->value = 'If you proceed, ALL of your changes will be lost.';
+  $export['content_lock_unload_js_message'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_lock_unload_js_message_enable';
+  $strongarm->value = 1;
+  $export['content_lock_unload_js_message_enable'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'default_mollom_form';
   $strongarm->value = array(
     'webform_client_form_1' => TRUE,
