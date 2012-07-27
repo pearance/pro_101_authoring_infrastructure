@@ -27,9 +27,10 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'name' => 'access workbench',
     'roles' => array(
       0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      1 => 'authenticated user',
+      2 => 'developer',
+      3 => 'professional',
+      4 => 'support',
     ),
     'module' => 'workbench',
   );
@@ -219,9 +220,10 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'name' => 'view all unpublished content',
     'roles' => array(
       0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      1 => 'authenticated user',
+      2 => 'developer',
+      3 => 'professional',
+      4 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
