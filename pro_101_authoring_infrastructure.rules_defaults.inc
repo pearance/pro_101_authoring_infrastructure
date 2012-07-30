@@ -9,11 +9,9 @@
  */
 function pro_101_authoring_infrastructure_default_rules_configuration() {
   $items = array();
-  $items['rules_notification_of_client_generated_content'] = entity_import('rules_config', '{ "rules_notification_of_client_generated_content" : {
-      "LABEL" : "Notification of client generated content",
+  $items['rules_client_generated_content'] = entity_import('rules_config', '{ "rules_client_generated_content" : {
+      "LABEL" : "Client generated content",
       "PLUGIN" : "reaction rule",
-      "WEIGHT" : "-5",
-      "TAGS" : [ "client", "content" ],
       "REQUIRES" : [ "workbench_moderation", "rules" ],
       "ON" : [ "workbench_moderation_after_moderation_transition" ],
       "IF" : [
@@ -23,7 +21,7 @@ function pro_101_authoring_infrastructure_default_rules_configuration() {
         { "mail" : {
             "to" : "support@pearance.net",
             "subject" : "NEW CONTENT - [[node:content-type]@[site:name]]",
-            "message" : "Title: [node:title]\\r\\nCreated: [node:created]\\r\\nLast Update: [node:changed]\\r\\n\\r\\nRevision Msg: [node:log]\\r\\n\\r\\nContent URL: [node:url]",
+            "message" : "Title: [node:title]\\\\r\\\\nCreated: [node:created]\\\\r\\\\nLast Update: [node:changed]\\\\r\\\\n\\\\r\\\\nRevision Msg: [node:log]\\\\r\\\\n\\\\r\\\\nContent URL: [node:url]",
             "from" : "[site:mail]",
             "language" : [ "" ]
           }
@@ -31,9 +29,10 @@ function pro_101_authoring_infrastructure_default_rules_configuration() {
       ]
     }
   }');
-  $items['rules_notification_of_consumer_generated_content'] = entity_import('rules_config', '{ "rules_notification_of_consumer_generated_content" : {
-      "LABEL" : "Notification of consumer generated content",
+  $items['rules_consumer_generated_content'] = entity_import('rules_config', '{ "rules_consumer_generated_content" : {
+      "LABEL" : "Consumer generated content",
       "PLUGIN" : "reaction rule",
+      "WEIGHT" : "-5",
       "REQUIRES" : [ "rules", "workbench_moderation" ],
       "ON" : [ "node_insert" ],
       "IF" : [
@@ -42,15 +41,24 @@ function pro_101_authoring_infrastructure_default_rules_configuration() {
             "type" : { "value" : { "testimonial" : "testimonial" } }
           }
         },
-        { "contents_current_state" : { "node" : [ "node" ], "moderation_state" : "needs_review" } }
+        { "NOT user_has_role" : {
+            "account" : [ "node:author" ],
+            "roles" : { "value" : {
+                "8998634" : "8998634",
+                "96220023" : "96220023",
+                "160159362" : "160159362",
+                "121011395" : "121011395"
+              }
+            },
+            "operation" : "OR"
+          }
+        }
       ],
       "DO" : [
-        { "mail" : {
-            "to" : "support@pearance.net",
-            "subject" : "NEW CONTENT - [[node:content-type]@[site:name]]",
-            "message" : "Title: [node:title]\\r\\nCreated: [node:created]\\r\\nLast Update: [node:changed]\\r\\n\\r\\nRevision Msg: [node:log]\\r\\n\\r\\nContent URL: [node:url]",
-            "from" : "[site:mail]",
-            "language" : [ "" ]
+        { "workbench_moderation_set_state" : {
+            "node" : [ "node" ],
+            "moderation_state" : "needs_review",
+            "force_transition" : 1
           }
         }
       ]
