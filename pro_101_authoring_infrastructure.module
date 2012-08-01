@@ -5,3 +5,16 @@
  */
 
 include_once 'pro_101_authoring_infrastructure.features.inc';
+
+/**
+ * Implements hook_views_default_views_alter().
+ */
+function pro_101_authoring_infrastructure_views_default_views_alter(&$views) {
+  $files = file_scan_directory(drupal_get_path('module', 'pro_101_authoring_infrastructure'). '/views', '/inc$/');
+  foreach ($files as $filename => $file) {
+    if (isset($views[$file->name])) {
+      require $filename;
+      $views[$file->name] = $view;
+    }
+  }
+}
