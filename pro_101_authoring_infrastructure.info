@@ -11,6 +11,7 @@ dependencies[] = content_lock_timeout
 dependencies[] = ctools
 dependencies[] = facebook_comments
 dependencies[] = features
+dependencies[] = image_resize_filter
 dependencies[] = invisimail
 dependencies[] = lexicon
 dependencies[] = mollom

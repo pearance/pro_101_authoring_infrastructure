@@ -57,7 +57,19 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
         'settings' => array(
           'local_paths' => '/',
           'protocol_style' => 'full',
-          'absolute' => 1,
+        ),
+      ),
+      'image_resize_filter' => array(
+        'weight' => '0',
+        'status' => '1',
+        'settings' => array(
+          'link' => 0,
+          'link_class' => '',
+          'link_rel' => '',
+          'image_locations' => array(
+            'local' => 'local',
+            'remote' => 'remote',
+          ),
         ),
       ),
     ),
