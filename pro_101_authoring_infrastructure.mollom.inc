@@ -14,6 +14,8 @@ function pro_101_authoring_infrastructure_default_mollom_form() {
   $mollom_form->disabled = FALSE; /* Edit this to true to make a default mollom_form disabled initially */
   $mollom_form->api_version = 1;
   $mollom_form->form_id = 'testimonial_node_form';
+  $mollom_form->entity = '';
+  $mollom_form->bundle = '';
   $mollom_form->mode = TRUE;
   $mollom_form->checks = array(
     0 => 'spam',
@@ -35,6 +37,8 @@ function pro_101_authoring_infrastructure_default_mollom_form() {
   $mollom_form->disabled = FALSE; /* Edit this to true to make a default mollom_form disabled initially */
   $mollom_form->api_version = 1;
   $mollom_form->form_id = 'webform_node_form';
+  $mollom_form->entity = '';
+  $mollom_form->bundle = '';
   $mollom_form->mode = TRUE;
   $mollom_form->checks = array(
     0 => 'spam',
