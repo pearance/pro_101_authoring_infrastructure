@@ -43,7 +43,7 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
         'settings' => array(),
       ),
       'invisimail_encode_js_entities' => array(
-        'weight' => '-42',
+        'weight' => '-46',
         'status' => '1',
         'settings' => array(
           'encoder' => 'js_entities',
@@ -51,16 +51,16 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
           'link' => 1,
         ),
       ),
-      'pathologic' => array(
-        'weight' => '-41',
+      'collapse_text_filter' => array(
+        'weight' => '-40',
         'status' => '1',
         'settings' => array(
-          'local_paths' => '/',
-          'protocol_style' => 'full',
+          'form' => 1,
+          'default_title' => 'Show more or less',
         ),
       ),
       'image_resize_filter' => array(
-        'weight' => '0',
+        'weight' => '-39',
         'status' => '1',
         'settings' => array(
           'link' => 0,
@@ -70,6 +70,14 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
             'local' => 'local',
             'remote' => 'remote',
           ),
+        ),
+      ),
+      'pathologic' => array(
+        'weight' => '-38',
+        'status' => '1',
+        'settings' => array(
+          'local_paths' => '/',
+          'protocol_style' => 'full',
         ),
       ),
     ),

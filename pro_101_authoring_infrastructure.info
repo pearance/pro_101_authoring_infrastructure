@@ -6,6 +6,7 @@ php = 5.2.4
 version = 7.x-1.0
 project = pro_101_authoring_infrastructure
 dependencies[] = ckeditor
+dependencies[] = collapse_text
 dependencies[] = content_lock
 dependencies[] = content_lock_timeout
 dependencies[] = ctools
