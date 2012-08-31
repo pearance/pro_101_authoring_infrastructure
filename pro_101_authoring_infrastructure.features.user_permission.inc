@@ -80,6 +80,16 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'mollom',
   );
 
+  // Exported permission: administer quicktabs.
+  $permissions['administer quicktabs'] = array(
+    'name' => 'administer quicktabs',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'quicktabs',
+  );
+
   // Exported permission: administer sharethis.
   $permissions['administer sharethis'] = array(
     'name' => 'administer sharethis',
