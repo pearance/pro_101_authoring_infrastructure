@@ -59,6 +59,7 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'name' => 'administer facebook comments',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'facebook_comments',
   );
@@ -66,7 +67,9 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   // Exported permission: administer filters.
   $permissions['administer filters'] = array(
     'name' => 'administer filters',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
     'module' => 'filter',
   );
 
