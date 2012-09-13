@@ -209,7 +209,6 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'name' => 'use PHP for settings',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'php',
   );
@@ -219,6 +218,7 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'name' => 'use text format php_code',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'filter',
   );
