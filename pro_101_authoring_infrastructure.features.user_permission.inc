@@ -179,8 +179,10 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   $permissions['moderate content from needs_review to draft'] = array(
     'name' => 'moderate content from needs_review to draft',
     'roles' => array(
-      0 => 'developer',
-      1 => 'support',
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
@@ -263,10 +265,7 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   $permissions['view moderation history'] = array(
     'name' => 'view moderation history',
     'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
+      0 => 'developer',
     ),
     'module' => 'workbench_moderation',
   );
