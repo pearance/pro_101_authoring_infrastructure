@@ -21,6 +21,18 @@ function pro_101_authoring_infrastructure_workbench_moderation_export_transition
       'from_name' => 'needs_review',
       'to_name' => 'published',
     ),
+    'published:unpublished' => array(
+      'from_name' => 'published',
+      'to_name' => 'unpublished',
+    ),
+    'unpublished:draft' => array(
+      'from_name' => 'unpublished',
+      'to_name' => 'draft',
+    ),
+    'unpublished:needs_review' => array(
+      'from_name' => 'unpublished',
+      'to_name' => 'needs_review',
+    ),
   );
   return $items;
 }

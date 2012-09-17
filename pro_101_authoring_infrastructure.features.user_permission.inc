@@ -194,6 +194,42 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'workbench_moderation',
   );
 
+  // Exported permission: moderate content from published to unpublished.
+  $permissions['moderate content from published to unpublished'] = array(
+    'name' => 'moderate content from published to unpublished',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate content from unpublished to draft.
+  $permissions['moderate content from unpublished to draft'] = array(
+    'name' => 'moderate content from unpublished to draft',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate content from unpublished to needs_review.
+  $permissions['moderate content from unpublished to needs_review'] = array(
+    'name' => 'moderate content from unpublished to needs_review',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
   // Exported permission: moderate facebook comments.
   $permissions['moderate facebook comments'] = array(
     'name' => 'moderate facebook comments',
