@@ -228,7 +228,7 @@ node/*/edit';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'content_lock_admin_cancelbutton';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['content_lock_admin_cancelbutton'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -244,6 +244,7 @@ node/*/edit';
   $strongarm->name = 'content_lock_allowed_formats';
   $strongarm->value = array(
     'plain_text' => 0,
+    'php_code' => 0,
   );
   $export['content_lock_allowed_formats'] = $strongarm;
 
@@ -254,12 +255,12 @@ node/*/edit';
   $strongarm->value = array(
     'faq' => 'faq',
     'blog' => 'blog',
-    'block' => 0,
-    'webform' => 0,
-    'page' => 0,
-    'featured' => 0,
-    'specialty' => 0,
-    'testimonial' => 0,
+    'block' => 'block',
+    'webform' => 'webform',
+    'page' => 'page',
+    'featured' => 'featured',
+    'specialty' => 'specialty',
+    'testimonial' => 'testimonial',
   );
   $export['content_lock_allowed_node_types'] = $strongarm;
 
@@ -267,14 +268,14 @@ node/*/edit';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'content_lock_timeout_minutes';
-  $strongarm->value = '120';
+  $strongarm->value = '60';
   $export['content_lock_timeout_minutes'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'content_lock_timeout_on_edit';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['content_lock_timeout_on_edit'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -295,7 +296,7 @@ node/*/edit';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'content_lock_unload_js_message_enable';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['content_lock_unload_js_message_enable'] = $strongarm;
 
   $strongarm = new stdClass();
