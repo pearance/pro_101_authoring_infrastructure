@@ -153,16 +153,6 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'content_lock',
   );
 
-  // Exported permission: create field_title_graphic.
-  $permissions['create field_title_graphic'] = array(
-    'name' => 'create field_title_graphic',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: customize ckeditor.
   $permissions['customize ckeditor'] = array(
     'name' => 'customize ckeditor',
@@ -170,26 +160,6 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'ckeditor',
-  );
-
-  // Exported permission: edit field_title_graphic.
-  $permissions['edit field_title_graphic'] = array(
-    'name' => 'edit field_title_graphic',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: edit own field_title_graphic.
-  $permissions['edit own field_title_graphic'] = array(
-    'name' => 'edit own field_title_graphic',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'field_permissions',
   );
 
   // Exported permission: moderate content from draft to needs_review.
@@ -227,36 +197,21 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   // Exported permission: moderate content from published to unpublished.
   $permissions['moderate content from published to unpublished'] = array(
     'name' => 'moderate content from published to unpublished',
-    'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
-    ),
+    'roles' => array(),
     'module' => 'workbench_moderation',
   );
 
   // Exported permission: moderate content from unpublished to draft.
   $permissions['moderate content from unpublished to draft'] = array(
     'name' => 'moderate content from unpublished to draft',
-    'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
-    ),
+    'roles' => array(),
     'module' => 'workbench_moderation',
   );
 
   // Exported permission: moderate content from unpublished to needs_review.
   $permissions['moderate content from unpublished to needs_review'] = array(
     'name' => 'moderate content from unpublished to needs_review',
-    'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
-    ),
+    'roles' => array(),
     'module' => 'workbench_moderation',
   );
 
@@ -324,18 +279,6 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'workbench_moderation',
   );
 
-  // Exported permission: view field_title_graphic.
-  $permissions['view field_title_graphic'] = array(
-    'name' => 'view field_title_graphic',
-    'roles' => array(
-      0 => 'anonymous user',
-      1 => 'authenticated user',
-      2 => 'developer',
-      3 => 'support',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: view moderation history.
   $permissions['view moderation history'] = array(
     'name' => 'view moderation history',
@@ -358,16 +301,6 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
       3 => 'support',
     ),
     'module' => 'workbench_moderation',
-  );
-
-  // Exported permission: view own field_title_graphic.
-  $permissions['view own field_title_graphic'] = array(
-    'name' => 'view own field_title_graphic',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'field_permissions',
   );
 
   return $permissions;
