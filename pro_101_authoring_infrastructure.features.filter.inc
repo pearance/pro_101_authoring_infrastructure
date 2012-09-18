@@ -74,6 +74,16 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
         'settings' => array(
           'local_paths' => '/',
           'protocol_style' => 'full',
+          'local_paths_exploded' => array(
+            0 => array(
+              'path' => '/',
+            ),
+            1 => array(
+              'path' => '/',
+              'host' => 'pro101a.platdev.info',
+            ),
+          ),
+          'base_url_host' => 'pro101a.platdev.info',
         ),
       ),
     ),
@@ -147,6 +157,16 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
         'settings' => array(
           'local_paths' => '/',
           'protocol_style' => 'full',
+          'local_paths_exploded' => array(
+            0 => array(
+              'path' => '/',
+            ),
+            1 => array(
+              'path' => '/',
+              'host' => 'pro101a.platdev.info',
+            ),
+          ),
+          'base_url_host' => 'pro101a.platdev.info',
         ),
       ),
     ),

@@ -174,6 +174,18 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'workbench_moderation',
   );
 
+  // Exported permission: moderate content from draft to trash.
+  $permissions['moderate content from draft to trash'] = array(
+    'name' => 'moderate content from draft to trash',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
   // Exported permission: moderate content from needs_review to draft.
   $permissions['moderate content from needs_review to draft'] = array(
     'name' => 'moderate content from needs_review to draft',
@@ -197,21 +209,78 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
   // Exported permission: moderate content from published to unpublished.
   $permissions['moderate content from published to unpublished'] = array(
     'name' => 'moderate content from published to unpublished',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate content from trash to draft.
+  $permissions['moderate content from trash to draft'] = array(
+    'name' => 'moderate content from trash to draft',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate content from trash to needs_review.
+  $permissions['moderate content from trash to needs_review'] = array(
+    'name' => 'moderate content from trash to needs_review',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate content from trash to published.
+  $permissions['moderate content from trash to published'] = array(
+    'name' => 'moderate content from trash to published',
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
     'module' => 'workbench_moderation',
   );
 
   // Exported permission: moderate content from unpublished to draft.
   $permissions['moderate content from unpublished to draft'] = array(
     'name' => 'moderate content from unpublished to draft',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
     'module' => 'workbench_moderation',
   );
 
   // Exported permission: moderate content from unpublished to needs_review.
   $permissions['moderate content from unpublished to needs_review'] = array(
     'name' => 'moderate content from unpublished to needs_review',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+      1 => 'support',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: moderate content from unpublished to trash.
+  $permissions['moderate content from unpublished to trash'] = array(
+    'name' => 'moderate content from unpublished to trash',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
     'module' => 'workbench_moderation',
   );
 

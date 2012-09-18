@@ -27,6 +27,12 @@ function pro_101_authoring_infrastructure_workbench_moderation_export_states() {
       'description' => 'Make this version live',
       'weight' => '-8',
     ),
+    'trash' => array(
+      'name' => 'trash',
+      'label' => 'Trash',
+      'description' => 'Mark this content as trash',
+      'weight' => '0',
+    ),
     'unpublished' => array(
       'name' => 'unpublished',
       'label' => 'Unpublished',
