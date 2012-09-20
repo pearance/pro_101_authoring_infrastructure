@@ -9,9 +9,10 @@
  */
 function pro_101_authoring_infrastructure_default_rules_configuration() {
   $items = array();
-  $items['rules_client_generated_content'] = entity_import('rules_config', '{ "rules_client_generated_content" : {
-      "LABEL" : "Client generated content",
+  $items['rules_professional_or_assistant_content_creation'] = entity_import('rules_config', '{ "rules_professional_or_assistant_content_creation" : {
+      "LABEL" : "Professional or assistant content creation",
       "PLUGIN" : "reaction rule",
+      "TAGS" : [ "pro assistant" ],
       "REQUIRES" : [ "workbench_moderation", "rules" ],
       "ON" : [ "workbench_moderation_after_moderation_transition" ],
       "IF" : [
@@ -24,41 +25,6 @@ function pro_101_authoring_infrastructure_default_rules_configuration() {
             "message" : "Title: [node:title]\\\\r\\\\nCreated: [node:created]\\\\r\\\\nLast Update: [node:changed]\\\\r\\\\n\\\\r\\\\nRevision Msg: [node:log]\\\\r\\\\n\\\\r\\\\nContent URL: [node:url]",
             "from" : "[site:mail]",
             "language" : [ "" ]
-          }
-        }
-      ]
-    }
-  }');
-  $items['rules_consumer_generated_content'] = entity_import('rules_config', '{ "rules_consumer_generated_content" : {
-      "LABEL" : "Consumer generated content",
-      "PLUGIN" : "reaction rule",
-      "WEIGHT" : "-5",
-      "REQUIRES" : [ "rules", "workbench_moderation" ],
-      "ON" : [ "node_insert" ],
-      "IF" : [
-        { "node_is_of_type" : {
-            "node" : [ "node" ],
-            "type" : { "value" : { "testimonial" : "testimonial" } }
-          }
-        },
-        { "NOT user_has_role" : {
-            "account" : [ "node:author" ],
-            "roles" : { "value" : {
-                "8998634" : "8998634",
-                "96220023" : "96220023",
-                "160159362" : "160159362",
-                "121011395" : "121011395"
-              }
-            },
-            "operation" : "OR"
-          }
-        }
-      ],
-      "DO" : [
-        { "workbench_moderation_set_state" : {
-            "node" : [ "node" ],
-            "moderation_state" : "needs_review",
-            "force_transition" : 1
           }
         }
       ]
