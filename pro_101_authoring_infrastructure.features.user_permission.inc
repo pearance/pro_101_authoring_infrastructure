@@ -40,7 +40,6 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'name' => 'administer checked out documents',
     'roles' => array(
       0 => 'developer',
-      1 => 'support',
     ),
     'module' => 'content_lock',
   );
