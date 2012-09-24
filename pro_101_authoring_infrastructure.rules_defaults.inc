@@ -14,7 +14,7 @@ function pro_101_authoring_infrastructure_default_rules_configuration() {
       "PLUGIN" : "reaction rule",
       "REQUIRES" : [ "rules" ],
       "ON" : [ "node_delete" ],
-      "DO" : [ { "redirect" : { "url" : "[site:url]" } } ]
+      "DO" : [ { "redirect" : { "url" : "[site:url]", "force" : 0 } } ]
     }
   }');
   $items['rules_professional_or_assistant_content_creation'] = entity_import('rules_config', '{ "rules_professional_or_assistant_content_creation" : {
