@@ -35,15 +35,6 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'workbench',
   );
 
-  // Exported permission: administer checked out documents.
-  $permissions['administer checked out documents'] = array(
-    'name' => 'administer checked out documents',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'content_lock',
-  );
-
   // Exported permission: administer ckeditor.
   $permissions['administer ckeditor'] = array(
     'name' => 'administer ckeditor',
@@ -138,18 +129,6 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
       0 => 'developer',
     ),
     'module' => 'workbench_moderation',
-  );
-
-  // Exported permission: check out documents.
-  $permissions['check out documents'] = array(
-    'name' => 'check out documents',
-    'roles' => array(
-      0 => 'assistant',
-      1 => 'developer',
-      2 => 'professional',
-      3 => 'support',
-    ),
-    'module' => 'content_lock',
   );
 
   // Exported permission: customize ckeditor.
