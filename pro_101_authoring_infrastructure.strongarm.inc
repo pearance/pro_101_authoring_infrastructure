@@ -302,15 +302,6 @@ node/*/edit';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'default_mollom_form';
-  $strongarm->value = array(
-    'webform_client_form_1' => TRUE,
-  );
-  $export['default_mollom_form'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'facebook_comments_applyall';
   $strongarm->value = 0;
   $export['facebook_comments_applyall'] = $strongarm;

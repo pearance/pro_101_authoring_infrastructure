@@ -101,7 +101,6 @@ features[variable][] = content_lock_timeout_on_edit
 features[variable][] = content_lock_unload_js
 features[variable][] = content_lock_unload_js_message
 features[variable][] = content_lock_unload_js_message_enable
-features[variable][] = default_mollom_form
 features[variable][] = facebook_comments_applyall
 features[variable][] = facebook_comments_block_amount
 features[variable][] = facebook_comments_block_width

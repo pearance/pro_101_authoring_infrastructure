@@ -48,7 +48,6 @@ function pro_101_authoring_infrastructure_default_mollom_form() {
   $mollom_form->enabled_fields = array(
     0 => 'title',
     1 => 'body][und][0][value',
-    2 => 'field_map_address][und][0][value',
   );
   $mollom_form->strictness = 'normal';
   $mollom_form->module = 'node';
