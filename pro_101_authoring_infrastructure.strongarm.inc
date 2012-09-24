@@ -302,6 +302,17 @@ node/*/edit';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'default_mollom_form';
+  $strongarm->value = array(
+    'webform_client_form_1' => TRUE,
+    'testimonial_node_form' => FALSE,
+    'webform_node_form' => FALSE,
+  );
+  $export['default_mollom_form'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'facebook_comments_applyall';
   $strongarm->value = 0;
   $export['facebook_comments_applyall'] = $strongarm;
@@ -447,6 +458,37 @@ node/*/edit';
   $strongarm->name = 'mollom_privacy_link';
   $strongarm->value = 1;
   $export['mollom_privacy_link'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mollom_private_key';
+  $strongarm->value = '3f347c3b2b9cb0426e2630ed8cdffba3';
+  $export['mollom_private_key'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mollom_public_key';
+  $strongarm->value = 'e0855dc88ae2822a5de2a340e39f9f26';
+  $export['mollom_public_key'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mollom_status';
+  $strongarm->value = array(
+    'keys' => TRUE,
+    'keys valid' => TRUE,
+  );
+  $export['mollom_status'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mollom_testing_mode';
+  $strongarm->value = 0;
+  $export['mollom_testing_mode'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
