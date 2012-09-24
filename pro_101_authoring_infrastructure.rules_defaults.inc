@@ -38,5 +38,17 @@ function pro_101_authoring_infrastructure_default_rules_configuration() {
       ]
     }
   }');
+  $items['rules_redirect_upon_unpublishing_a_node'] = entity_import('rules_config', '{ "rules_redirect_upon_unpublishing_a_node" : {
+      "LABEL" : "Redirect upon unpublishing a node",
+      "PLUGIN" : "reaction rule",
+      "TAGS" : [ "redirect" ],
+      "REQUIRES" : [ "workbench_moderation", "rules" ],
+      "ON" : [ "workbench_moderation_after_moderation_transition" ],
+      "IF" : [
+        { "contents_current_state" : { "node" : [ "node" ], "moderation_state" : "unpublished" } }
+      ],
+      "DO" : [ { "redirect" : { "url" : "[node:url]" } } ]
+    }
+  }');
   return $items;
 }
