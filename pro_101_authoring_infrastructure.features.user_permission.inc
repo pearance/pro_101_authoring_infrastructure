@@ -149,6 +149,18 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'facebook_comments',
   );
 
+  // Exported permission: save draft.
+  $permissions['save draft'] = array(
+    'name' => 'save draft',
+    'roles' => array(
+      0 => 'assistant',
+      1 => 'developer',
+      2 => 'professional',
+      3 => 'support',
+    ),
+    'module' => 'save_draft',
+  );
+
   // Exported permission: use PHP for settings.
   $permissions['use PHP for settings'] = array(
     'name' => 'use PHP for settings',
