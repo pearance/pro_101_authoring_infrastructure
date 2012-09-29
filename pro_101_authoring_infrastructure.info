@@ -18,6 +18,7 @@ dependencies[] = invisimail
 dependencies[] = jail
 dependencies[] = lexicon
 dependencies[] = mollom
+dependencies[] = pagepreview
 dependencies[] = pathologic
 dependencies[] = php
 dependencies[] = quicktabs
