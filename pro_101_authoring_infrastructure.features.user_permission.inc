@@ -161,15 +161,6 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'save_draft',
   );
 
-  // Exported permission: use PHP for settings.
-  $permissions['use PHP for settings'] = array(
-    'name' => 'use PHP for settings',
-    'roles' => array(
-      0 => 'developer',
-    ),
-    'module' => 'php',
-  );
-
   // Exported permission: use text format php_code.
   $permissions['use text format php_code'] = array(
     'name' => 'use text format php_code',
