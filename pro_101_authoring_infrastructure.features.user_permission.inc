@@ -161,16 +161,6 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'module' => 'save_draft',
   );
 
-  // Exported permission: use text format php_code.
-  $permissions['use text format php_code'] = array(
-    'name' => 'use text format php_code',
-    'roles' => array(
-      0 => 'developer',
-      1 => 'support',
-    ),
-    'module' => 'filter',
-  );
-
   // Exported permission: use workbench_moderation my drafts tab.
   $permissions['use workbench_moderation my drafts tab'] = array(
     'name' => 'use workbench_moderation my drafts tab',
