@@ -25,7 +25,7 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
     'Regular' => array(
       'name' => 'Regular',
       'settings' => array(
-        'ss' => '2',
+        'ss' => '1',
         'default' => 't',
         'show_toggle' => 'f',
         'skin' => 'kama',
@@ -46,7 +46,7 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
         'enter_mode' => 'br',
         'shift_enter_mode' => 'p',
         'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
-        'custom_formatting' => 'f',
+        'custom_formatting' => 't',
         'formatting' => array(
           'custom_formatting_options' => array(
             'indent' => 'indent',
@@ -69,7 +69,7 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
         'ckeditor_load_method' => 'ckeditor.js',
         'ckeditor_load_time_out' => '0',
         'forcePasteAsPlainText' => 'f',
-        'html_entities' => 't',
+        'html_entities' => 'f',
         'scayt_autoStartup' => 't',
         'theme_config_js' => 'f',
         'js_conf' => 'config.resize_enabled = false;
@@ -96,6 +96,25 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
                 'icon' => 'images/icon.gif',
               ),
             ),
+            'default' => 'f',
+          ),
+          'mediaembed' => array(
+            'name' => 'mediaembed',
+            'desc' => 'Plugin for inserting Drupal embeded media',
+            'path' => '%base_path%%plugin_dir%mediaembed/',
+            'buttons' => array(
+              'MediaEmbed' => array(
+                'label' => 'MediaEmbed',
+                'icon' => 'images/icon.png',
+              ),
+            ),
+            'default' => 'f',
+          ),
+          'stylesheetparser' => array(
+            'name' => 'stylesheetparser',
+            'desc' => 'Stylesheet Parser plugin',
+            'path' => '%base_path%%editor_path%plugins/stylesheetparser/',
+            'buttons' => FALSE,
             'default' => 'f',
           ),
         ),

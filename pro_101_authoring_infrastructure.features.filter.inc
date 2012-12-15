@@ -18,16 +18,6 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
     'status' => '1',
     'weight' => '10',
     'filters' => array(
-      'filter_autop' => array(
-        'weight' => '-50',
-        'status' => '1',
-        'settings' => array(),
-      ),
-      'filter_htmlcorrector' => array(
-        'weight' => '-49',
-        'status' => '1',
-        'settings' => array(),
-      ),
       'invisimail_encode_html_entities' => array(
         'weight' => '-48',
         'status' => '1',
@@ -84,10 +74,10 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
             ),
             1 => array(
               'path' => '/',
-              'host' => '',
+              'host' => 'pro101a.platdev.info',
             ),
           ),
-          'base_url_host' => '',
+          'base_url_host' => 'pro101a.platdev.info',
         ),
       ),
     ),
