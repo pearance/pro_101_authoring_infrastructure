@@ -74,10 +74,10 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
             ),
             1 => array(
               'path' => '/',
-              'host' => 'pro101a.platdev.info',
+              'host' => '',
             ),
           ),
-          'base_url_host' => 'pro101a.platdev.info',
+          'base_url_host' => '',
         ),
       ),
     ),
