@@ -17,6 +17,8 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
         'ckeditor_plugins_path' => '%m/plugins',
         'ckeditor_plugins_local_path' => '',
         'ckfinder_path' => '%m/ckfinder',
+        'ckfinder_local_path' => '',
+        'ckeditor_aggregate' => 'f',
         'toolbar_wizard' => 't',
         'loadPlugins' => array(),
       ),
@@ -30,9 +32,6 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
         'show_toggle' => 'f',
         'skin' => 'kama',
         'uicolor' => 'custom',
-        'uicolor_textarea' => '<p>
-	Click the <strong>UI Color Picker</strong> button to set your color preferences.</p>
-',
         'uicolor_user' => '#EEEEEE',
         'toolbar' => '[
     [\'Styles\',\'Bold\',\'Italic\',\'Underline\',\'Templates\',\'Media\',\'BulletedList\',\'NumberedList\',\'Table\',\'Link\',\'Unlink\'],
@@ -82,14 +81,14 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
           'autogrow' => array(
             'name' => 'autogrow',
             'desc' => 'Auto Grow plugin',
-            'path' => '%base_path%%editor_path%plugins/autogrow/',
+            'path' => '%editor_path%plugins/autogrow/',
             'buttons' => FALSE,
             'default' => 'f',
           ),
           'media' => array(
             'name' => 'media',
             'desc' => 'Plugin for inserting images from Drupal media module',
-            'path' => '%base_path%%plugin_dir%media/',
+            'path' => '%plugin_dir%media/',
             'buttons' => array(
               'Media' => array(
                 'label' => 'Media',
@@ -101,7 +100,7 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
           'mediaembed' => array(
             'name' => 'mediaembed',
             'desc' => 'Plugin for inserting Drupal embeded media',
-            'path' => '%base_path%%plugin_dir%mediaembed/',
+            'path' => '%plugin_dir%mediaembed/',
             'buttons' => array(
               'MediaEmbed' => array(
                 'label' => 'MediaEmbed',
@@ -113,7 +112,7 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
           'stylesheetparser' => array(
             'name' => 'stylesheetparser',
             'desc' => 'Stylesheet Parser plugin',
-            'path' => '%base_path%%editor_path%plugins/stylesheetparser/',
+            'path' => '%editor_path%plugins/stylesheetparser/',
             'buttons' => FALSE,
             'default' => 'f',
           ),

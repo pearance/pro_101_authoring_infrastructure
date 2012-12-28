@@ -78,6 +78,7 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
             ),
           ),
           'base_url_host' => 'pro101a.platdev.info',
+          'docroot' => '/srv/aegir/platforms/pro101a',
         ),
       ),
     ),
