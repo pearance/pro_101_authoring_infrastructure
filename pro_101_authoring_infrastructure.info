@@ -19,7 +19,6 @@ dependencies[] = jail
 dependencies[] = lexicon
 dependencies[] = mollom
 dependencies[] = pagepreview
-dependencies[] = pathologic
 dependencies[] = quicktabs
 dependencies[] = rules
 dependencies[] = save_draft

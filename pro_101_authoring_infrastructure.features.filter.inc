@@ -62,25 +62,6 @@ function pro_101_authoring_infrastructure_filter_default_formats() {
           ),
         ),
       ),
-      'pathologic' => array(
-        'weight' => '-38',
-        'status' => '1',
-        'settings' => array(
-          'local_paths' => '/',
-          'protocol_style' => 'full',
-          'local_paths_exploded' => array(
-            0 => array(
-              'path' => '/',
-            ),
-            1 => array(
-              'path' => '/',
-              'host' => '',
-            ),
-          ),
-          'base_url_host' => '',
-          'docroot' => '',
-        ),
-      ),
     ),
   );
 
