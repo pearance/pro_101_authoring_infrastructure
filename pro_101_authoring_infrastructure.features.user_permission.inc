@@ -127,6 +127,7 @@ function pro_101_authoring_infrastructure_user_default_permissions() {
     'name' => 'bypass workbench moderation',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'workbench_moderation',
   );
