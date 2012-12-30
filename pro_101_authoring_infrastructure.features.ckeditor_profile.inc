@@ -30,20 +30,19 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
         'ss' => '1',
         'default' => 't',
         'show_toggle' => 'f',
-        'skin' => 'kama',
         'uicolor' => 'custom',
         'uicolor_user' => '#EEEEEE',
         'toolbar' => '[
-    [\'Styles\',\'Bold\',\'Italic\',\'Underline\',\'Templates\',\'Media\',\'BulletedList\',\'NumberedList\',\'Table\',\'Link\',\'Unlink\'],
-    [\'Source\']
+    [\'Styles\',\'Templates\',\'Media\',\'BulletedList\',\'NumberedList\',\'Table\',\'Link\',\'Unlink\'],
+    [\'Maximize\',\'Source\']
 ]',
         'expand' => 't',
         'width' => '100%',
         'lang' => 'en',
         'auto_lang' => 't',
         'language_direction' => 'default',
-        'enter_mode' => 'br',
-        'shift_enter_mode' => 'p',
+        'enter_mode' => 'p',
+        'shift_enter_mode' => 'br',
         'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
         'custom_formatting' => 't',
         'formatting' => array(
@@ -65,26 +64,12 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
         'filebrowser_flash' => '',
         'UserFilesPath' => '%b%f/',
         'UserFilesAbsolutePath' => '%d%b%f/',
-        'ckeditor_load_method' => 'ckeditor.js',
-        'ckeditor_load_time_out' => '0',
         'forcePasteAsPlainText' => 'f',
         'html_entities' => 'f',
         'scayt_autoStartup' => 't',
         'theme_config_js' => 'f',
-        'js_conf' => 'config.resize_enabled = false;
-// Sizes are in pixels
-// config.resize_minWidth = 550;
-// config.resize_maxWidth = 860;
-// config.resize_minHeight = 200;
-// config.resize_maxHeight = 500;',
+        'js_conf' => '',
         'loadPlugins' => array(
-          'autogrow' => array(
-            'name' => 'autogrow',
-            'desc' => 'Auto Grow plugin',
-            'path' => '%editor_path%plugins/autogrow/',
-            'buttons' => FALSE,
-            'default' => 'f',
-          ),
           'media' => array(
             'name' => 'media',
             'desc' => 'Plugin for inserting images from Drupal media module',
@@ -107,13 +92,6 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
                 'icon' => 'images/icon.png',
               ),
             ),
-            'default' => 'f',
-          ),
-          'stylesheetparser' => array(
-            'name' => 'stylesheetparser',
-            'desc' => 'Stylesheet Parser plugin',
-            'path' => '%editor_path%plugins/stylesheetparser/',
-            'buttons' => FALSE,
             'default' => 'f',
           ),
         ),
