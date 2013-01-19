@@ -419,14 +419,14 @@ node/*/edit';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_button_option';
-  $strongarm->value = 'stbc_vcount';
+  $strongarm->value = 'stbc_hcount';
   $export['sharethis_button_option'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_location';
-  $strongarm->value = 'links';
+  $strongarm->value = 'content';
   $export['sharethis_location'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -450,7 +450,7 @@ node/*/edit';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'sharethis_service_option';
-  $strongarm->value = '"ShareThis:sharethis"';
+  $strongarm->value = '"Facebook:facebook","Tweet:twitter","LinkedIn:linkedin","Google +:googleplus"';
   $export['sharethis_service_option'] = $strongarm;
 
   $strongarm = new stdClass();
