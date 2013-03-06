@@ -24,10 +24,8 @@ function pro_101_authoring_infrastructure_default_mollom_form() {
   $mollom_form->discard = FALSE;
   $mollom_form->moderation = TRUE;
   $mollom_form->enabled_fields = array(
-    0 => 'title',
-    1 => 'body][und][0][value',
-    2 => 'field_title][und][0][value',
-    3 => 'field_city_state][und][0][value',
+    0 => 'body][und][0][value',
+    1 => 'field_city_state][und][0][value',
   );
   $mollom_form->strictness = 'normal';
   $mollom_form->module = 'node';

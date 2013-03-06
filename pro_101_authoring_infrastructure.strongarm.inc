@@ -381,7 +381,7 @@ node/*/edit';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mollom_privacy_link';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['mollom_privacy_link'] = $strongarm;
 
   $strongarm = new stdClass();

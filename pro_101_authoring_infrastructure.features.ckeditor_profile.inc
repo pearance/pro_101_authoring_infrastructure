@@ -27,10 +27,10 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
     'Regular' => array(
       'name' => 'Regular',
       'settings' => array(
-        'ss' => '1',
+        'ss' => '2',
         'default' => 't',
         'show_toggle' => 'f',
-        'uicolor' => 'custom',
+        'uicolor' => 'default',
         'uicolor_user' => '#EEEEEE',
         'toolbar' => '[
     [\'Styles\',\'Templates\',\'Media\',\'BulletedList\',\'NumberedList\',\'Table\',\'Link\',\'Unlink\'],
@@ -44,7 +44,7 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
         'enter_mode' => 'p',
         'shift_enter_mode' => 'br',
         'font_format' => 'p;div;pre;address;h1;h2;h3;h4;h5;h6',
-        'custom_formatting' => 't',
+        'custom_formatting' => 'f',
         'formatting' => array(
           'custom_formatting_options' => array(
             'indent' => 'indent',
@@ -55,7 +55,7 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
             'pre_indent' => 'pre_indent',
           ),
         ),
-        'css_mode' => 'none',
+        'css_mode' => 'theme',
         'css_path' => '',
         'css_style' => 'theme',
         'styles_path' => '',
@@ -64,11 +64,11 @@ function pro_101_authoring_infrastructure_ckeditor_profile_defaults() {
         'filebrowser_flash' => '',
         'UserFilesPath' => '%b%f/',
         'UserFilesAbsolutePath' => '%d%b%f/',
-        'forcePasteAsPlainText' => 'f',
+        'forcePasteAsPlainText' => 't',
         'html_entities' => 'f',
         'scayt_autoStartup' => 't',
         'theme_config_js' => 'f',
-        'js_conf' => '',
+        'js_conf' => 'config.forcePasteAsPlainText = true;',
         'loadPlugins' => array(
           'media' => array(
             'name' => 'media',
